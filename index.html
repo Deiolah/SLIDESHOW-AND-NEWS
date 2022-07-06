@@ -47,6 +47,7 @@ width: 1500px;
 margin: 0;
 left: 0;
 animation: 20s slideshow infinite;
+    overflow: hidden;
     
 }
 
@@ -54,24 +55,26 @@ animation: 20s slideshow infinite;
 width:500px;
 float: left; 
 height: 500px;
-overflow: hidden;
 }
 
 @keyframes slideshow{
     0% {left:0;
     }
-    10%{left:0;
+    20% {left: -25%;
     }
-    20% {left: -50%;
+    40% {left: -50%;
     }
-    40% {left: -100%;
+    60%{left: -75%;
     }
-    60%{left: -150%;
+    80%{left: -100%;
     }
-    80%{left: -200%;
+    100%{left: -150%;
     }
-    100%{left: -250%;
+    120%{left: -200%;
     }
+    140%{left: -250%;
+    }
+    
   
 }
 
