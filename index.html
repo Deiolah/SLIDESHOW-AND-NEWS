@@ -3,10 +3,18 @@
 <head>
 
 <title> Slideshow </title>
-
+<link rel="stylesheet"; href="C:\Users\segun\Desktop\NOBEL\SLIDESHOW\slideshow.css">
 </head>
 <body>
-
+    <div id="slideshow">
+        <figure>
+            <img id="img1" src="C:\Users\segun\Desktop\NOBEL\SLIDESHOW\1.jpg"; alt="">
+            <img id="img2"src="C:\Users\segun\Desktop\NOBEL\SLIDESHOW\2.jpg"; alt="">
+            <img id="img3"src="C:\Users\segun\Desktop\NOBEL\SLIDESHOW\3.jpg"; alt="">
+           
+        </figure>
+    
+    </div>
 
 
 
@@ -18,3 +26,70 @@
 
 
 </html>
+<style>
+div{
+    height: 10%;
+}
+
+
+#slideshow{
+overflow: hidden;
+max-width: 400%;
+min-width: 500px;
+max-height: 500px;
+min-height: 500px;
+
+}
+
+#slideshow figure{
+position: relative;
+width: 400%;
+margin: 0;
+left: 0;
+animation: 20s slideshow infinite;
+}
+
+#slideshow figure img{
+width:500px;
+float: left; 
+height: 500px;   
+}
+
+@keyframes slideshow{
+    0% {left:0;
+    }
+    20% {left: -50%;
+    }
+    40% {left: -100%;
+    }
+    60%{left: -150%;
+    }
+    80%{left: -200%;
+    }
+    100%{left: -250%;
+    }
+    120%{left: -300%;
+    }
+}
+
+
+
+
+.img1{
+    width: 600px;
+    height: 500px;
+    }
+
+.img2{
+        width: 600px;
+        height: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.img3{
+        width: 600px;
+        height: 500px;
+    }
+
+
+    </style>
